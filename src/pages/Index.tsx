@@ -9,7 +9,7 @@ import {
   useSensor,
   useSensors,
 } from "@dnd-kit/core";
-import { Plus, Download, RotateCcw, Eraser } from "lucide-react";
+import { Plus, Download, RotateCcw, Eraser, ImagePlus } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { TierRow } from "@/components/tier/TierRow";
@@ -19,6 +19,7 @@ import { toast } from "sonner";
 export interface TierItem {
   id: string;
   label: string;
+  imageUrl?: string;
 }
 
 interface TierDef {
@@ -59,6 +60,7 @@ const Index = () => {
   const [input, setInput] = useState("");
   const [activeId, setActiveId] = useState<string | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
+  const fileInputRef = useRef<HTMLInputElement>(null);
   const boardRef = useRef<HTMLDivElement>(null);
 
   const sensors = useSensors(

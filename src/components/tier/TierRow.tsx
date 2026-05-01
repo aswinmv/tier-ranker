@@ -11,6 +11,7 @@ interface TierRowProps {
   items: TierItem[];
   onRemoveItem: (id: string) => void;
   onRenameTier: (id: string, label: string) => void;
+  onRelabelItem: (id: string, label: string) => void;
 }
 
 export const TierRow = ({
@@ -20,6 +21,7 @@ export const TierRow = ({
   items,
   onRemoveItem,
   onRenameTier,
+  onRelabelItem,
 }: TierRowProps) => {
   const { setNodeRef, isOver } = useDroppable({ id });
   const [editing, setEditing] = useState(false);
@@ -33,7 +35,7 @@ export const TierRow = ({
   };
 
   return (
-    <div className="flex min-h-[110px] overflow-hidden">
+    <div className="flex min-h-[120px] overflow-hidden">
       <div
         className={cn(
           "flex w-[110px] shrink-0 flex-col items-center justify-center gap-1 px-2 text-tier-ink",
@@ -88,7 +90,9 @@ export const TierRow = ({
             key={item.id}
             id={item.id}
             label={item.label}
+            imageUrl={item.imageUrl}
             onRemove={onRemoveItem}
+            onRelabel={onRelabelItem}
           />
         ))}
       </div>

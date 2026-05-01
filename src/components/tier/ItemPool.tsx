@@ -6,9 +6,10 @@ import type { TierItem } from "@/pages/Index";
 interface ItemPoolProps {
   items: TierItem[];
   onRemoveItem: (id: string) => void;
+  onRelabelItem: (id: string, label: string) => void;
 }
 
-export const ItemPool = ({ items, onRemoveItem }: ItemPoolProps) => {
+export const ItemPool = ({ items, onRemoveItem, onRelabelItem }: ItemPoolProps) => {
   const { setNodeRef, isOver } = useDroppable({ id: "pool" });
 
   return (
@@ -30,7 +31,7 @@ export const ItemPool = ({ items, onRemoveItem }: ItemPoolProps) => {
       <div className="flex flex-wrap gap-2">
         {items.length === 0 ? (
           <p className="w-full py-6 text-center text-sm text-muted-foreground/70 italic">
-            All items placed — add more above
+            All items placed — add text or upload images above
           </p>
         ) : (
           items.map((item) => (
@@ -38,7 +39,9 @@ export const ItemPool = ({ items, onRemoveItem }: ItemPoolProps) => {
               key={item.id}
               id={item.id}
               label={item.label}
+              imageUrl={item.imageUrl}
               onRemove={onRemoveItem}
+              onRelabel={onRelabelItem}
             />
           ))
         )}

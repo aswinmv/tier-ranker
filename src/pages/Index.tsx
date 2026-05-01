@@ -237,6 +237,7 @@ const Index = () => {
                 items={placement[t.id] ?? []}
                 onRemoveItem={handleRemoveItem}
                 onRenameTier={handleRenameTier}
+                onRelabelItem={handleRelabelItem}
               />
             ))}
           </div>
@@ -260,6 +261,21 @@ const Index = () => {
                 />
                 <Button onClick={handleAdd} className="h-11 gap-1.5">
                   <Plus className="h-4 w-4" /> Add
+                </Button>
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  className="hidden"
+                  onChange={(e) => handleUploadImages(e.target.files)}
+                />
+                <Button
+                  variant="secondary"
+                  onClick={() => fileInputRef.current?.click()}
+                  className="h-11 gap-1.5"
+                >
+                  <ImagePlus className="h-4 w-4" /> Upload
                 </Button>
               </div>
               <div className="flex gap-2">
@@ -287,7 +303,11 @@ const Index = () => {
               </div>
             </div>
 
-            <ItemPool items={placement.pool ?? []} onRemoveItem={handleRemoveItem} />
+            <ItemPool
+              items={placement.pool ?? []}
+              onRemoveItem={handleRemoveItem}
+              onRelabelItem={handleRelabelItem}
+            />
           </div>
 
           <DragOverlay>

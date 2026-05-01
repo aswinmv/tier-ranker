@@ -122,9 +122,42 @@ const Index = () => {
   const handleRemoveItem = (id: string) => {
     setPlacement((prev) => {
       const next: Record<string, TierItem[]> = {};
-      for (const k of Object.keys(prev)) next[k] = prev[k].filter((i) => i.id !== id);
+      for (const k of Object.keys(prev)) {
+        next[k] = prev[k].filter((i) => {
+          if (i.id === id && i.imageUrl) URL.revokeObjectURL(i.imageUrl);
+          return i.id !== id;
+        });
+      }
       return next;
     });
+  };
+
+  const handleRelabelItem = (id: string, label: string) => {
+    setPlacement((prev) => {
+      const next: Record<string, TierItem[]> = {};
+      for (const k of Object.keys(prev)) {
+        next[k] = prev[k].map((i) => (i.id === id ? { ...i, label } : i));
+      }
+      return next;
+    });
+  };
+
+  const handleUploadImages = (files: FileList | null) => {
+    if (!files || files.length === 0) return;
+    const newItems: TierItem[] = [];
+    let rejected = 0;
+    Array.from(files).forEach((file) => {
+      if (!file.type.startsWith("image/") || file.size > 8 * 1024 * 1024) {
+        rejected++;
+        return;
+      }
+      newItems.push({ id: uid(), label: "", imageUrl: URL.createObjectURL(file) });
+    });
+    if (newItems.length) {
+      setPlacement((p) => ({ ...p, pool: [...p.pool, ...newItems] }));
+    }
+    if (rejected) toast.error(`${rejected} file(s) skipped (must be image under 8MB)`);
+    if (fileInputRef.current) fileInputRef.current.value = "";
   };
 
   const handleClearTiers = () => {
@@ -141,6 +174,10 @@ const Index = () => {
   };
 
   const handleReset = () => {
+    // revoke any existing object URLs
+    Object.values(placement).flat().forEach((i) => {
+      if (i.imageUrl) URL.revokeObjectURL(i.imageUrl);
+    });
     const next: Record<string, TierItem[]> = { pool: [] };
     tiers.forEach((t) => (next[t.id] = []));
     next.pool = SAMPLE_ITEMS.map((label) => ({ id: uid(), label }));

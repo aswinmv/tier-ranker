@@ -69,7 +69,7 @@ const Index = () => {
   );
 
   useEffect(() => {
-    document.title = "Rate It — Tier List Maker";
+    document.title = "Rate It: Tier List Maker";
   }, []);
 
   const findContainer = (itemId: string): string | null => {
@@ -212,7 +212,7 @@ const Index = () => {
       <main className="mx-auto max-w-5xl px-4 py-10 sm:py-16">
         <header className="mb-10 flex flex-col gap-2">
           <h1 className="font-display text-5xl sm:text-7xl font-bold tracking-tight">
-            Tier List Maker — Rank Anything
+            Tier List Maker: Rank Anything
           </h1>
           <p className="text-muted-foreground text-lg">
             Free drag-and-drop tier list maker. Create a ranking list with text or images,
@@ -337,7 +337,7 @@ const Index = () => {
             <p className="text-sm text-muted-foreground">
               Use this tier list creator to rank movies, video games, characters, anime, music
               albums, sports teams, food, brands, or anything else. Build a shareable ranking
-              list in under a minute — no signup, no install.
+              list in under a minute, with no signup and no install.
             </p>
           </article>
         </section>
@@ -350,8 +350,8 @@ const Index = () => {
             <div>
               <dt className="font-semibold text-foreground">What is a tier list?</dt>
               <dd className="text-muted-foreground">
-                A tier list is a ranking list that groups items into labeled tiers — typically
-                from best (S or Goated) to worst — to compare and rate them visually.
+                A tier list is a ranking list that groups items into labeled tiers, typically
+                from best (S or Goated) to worst, to compare and rate them visually.
               </dd>
             </div>
             <div>

@@ -320,6 +320,57 @@ const Index = () => {
           </DragOverlay>
         </DndContext>
 
+        <section aria-labelledby="how-to-rank" className="mt-16 grid gap-8 sm:grid-cols-2">
+          <article>
+            <h2 id="how-to-rank" className="font-display text-2xl font-bold mb-3">
+              How to make a tier list
+            </h2>
+            <ol className="list-decimal pl-5 space-y-2 text-sm text-muted-foreground">
+              <li>Add items by typing them in or uploading images to the pool.</li>
+              <li>Drag each item into a tier from <strong>Goated</strong> to <strong>Booty</strong>.</li>
+              <li>Click any tier label to rename it for your custom ranking list.</li>
+              <li>Hit <strong>Export</strong> to download your tier list as a PNG.</li>
+            </ol>
+          </article>
+          <article>
+            <h2 className="font-display text-2xl font-bold mb-3">Rank anything you can think of</h2>
+            <p className="text-sm text-muted-foreground">
+              Use this tier list creator to rank movies, video games, characters, anime, music
+              albums, sports teams, food, brands, or anything else. Build a shareable ranking
+              list in under a minute — no signup, no install.
+            </p>
+          </article>
+        </section>
+
+        <section aria-labelledby="faq" className="mt-12">
+          <h2 id="faq" className="font-display text-2xl font-bold mb-4">
+            Tier list maker FAQ
+          </h2>
+          <dl className="space-y-4 text-sm">
+            <div>
+              <dt className="font-semibold text-foreground">What is a tier list?</dt>
+              <dd className="text-muted-foreground">
+                A tier list is a ranking list that groups items into labeled tiers — typically
+                from best (S or Goated) to worst — to compare and rate them visually.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-foreground">How do I rank items with images?</dt>
+              <dd className="text-muted-foreground">
+                Click <em>Upload</em>, pick one or more images, and drag the resulting cards into
+                any tier. You can add a caption to each image too.
+              </dd>
+            </div>
+            <div>
+              <dt className="font-semibold text-foreground">Is this tier list maker free?</dt>
+              <dd className="text-muted-foreground">
+                Yes. Rate It is 100% free, runs entirely in your browser, and never asks for a
+                signup or payment.
+              </dd>
+            </div>
+          </dl>
+        </section>
+
         <footer className="mt-12 text-center text-xs text-muted-foreground">
           Built for ranking everything from cold pizza to Monday mornings.
         </footer>

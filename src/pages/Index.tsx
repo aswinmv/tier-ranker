@@ -212,10 +212,11 @@ const Index = () => {
       <main className="mx-auto max-w-5xl px-4 py-10 sm:py-16">
         <header className="mb-10 flex flex-col gap-2">
           <h1 className="font-display text-5xl sm:text-7xl font-bold tracking-tight">
-            Rate It — Tier List Maker
+            Tier List Maker — Rank Anything
           </h1>
-          <p className="text-muted-foreground">
-            Rank anything. Drag items or images into your tier and click a tier name to rename it.
+          <p className="text-muted-foreground text-lg">
+            Free drag-and-drop tier list maker. Create a ranking list with text or images,
+            rename tiers, and export your tier list as a PNG.
           </p>
         </header>
 

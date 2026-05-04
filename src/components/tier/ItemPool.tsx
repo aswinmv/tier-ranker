@@ -31,7 +31,7 @@ export const ItemPool = ({ items, onRemoveItem, onRelabelItem }: ItemPoolProps) 
       <div className="flex flex-wrap gap-2">
         {items.length === 0 ? (
           <p className="w-full py-6 text-center text-sm text-muted-foreground/70 italic">
-            All items placed — add text or upload images above
+            All items placed. Add text or upload images above
           </p>
         ) : (
           items.map((item) => (

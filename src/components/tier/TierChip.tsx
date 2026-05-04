@@ -47,14 +47,15 @@ export const TierChip = ({ id, label, imageUrl, onRemove, onRelabel }: TierChipP
         {...attributes}
         className="group relative flex w-[88px] flex-col items-stretch gap-1 rounded-lg border border-border bg-surface-elevated p-1.5 shadow-sm cursor-grab active:cursor-grabbing select-none touch-none hover:border-foreground/40 transition-colors"
       >
-        <div
-          className="relative h-[72px] w-full overflow-hidden rounded-md bg-background"
-          style={{
-            backgroundImage: `url(${imageUrl})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        >
+        <div className="relative h-[72px] w-full overflow-hidden rounded-md bg-background">
+          <img
+            src={imageUrl}
+            alt={label ? `${label} tier list item` : "Tier list item"}
+            loading="lazy"
+            decoding="async"
+            draggable={false}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
           <button
             onPointerDown={stop}
             onClick={(e) => {

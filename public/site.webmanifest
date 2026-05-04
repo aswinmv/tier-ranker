@@ -1,0 +1,12 @@
+{
+  "name": "Rate It — Tier List Maker",
+  "short_name": "Rate It",
+  "description": "Free tier list maker to rank anything. Drag and drop items or images into custom tiers and export as PNG.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1E2025",
+  "theme_color": "#1E2025",
+  "icons": [
+    { "src": "/favicon.ico", "sizes": "any", "type": "image/x-icon" }
+  ]
+}

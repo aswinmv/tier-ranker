@@ -69,7 +69,7 @@ const Index = () => {
   );
 
   useEffect(() => {
-    document.title = "Rate It: Tier List Maker";
+    document.title = "Tier List Maker: Rank Anything Free Online | Rate It";
   }, []);
 
   const findContainer = (itemId: string): string | null => {
@@ -323,21 +323,66 @@ const Index = () => {
         <section aria-labelledby="how-to-rank" className="mt-16 grid gap-8 sm:grid-cols-2">
           <article>
             <h2 id="how-to-rank" className="font-display text-2xl font-bold mb-3">
-              How to make a tier list
+              How to make a tier list in 4 steps
             </h2>
-            <ol className="list-decimal pl-5 space-y-2 text-sm text-muted-foreground">
-              <li>Add items by typing them in or uploading images to the pool.</li>
-              <li>Drag each item into a tier from <strong>Goated</strong> to <strong>Booty</strong>.</li>
-              <li>Click any tier label to rename it for your custom ranking list.</li>
-              <li>Hit <strong>Export</strong> to download your tier list as a PNG.</li>
-            </ol>
+            <p className="text-sm text-muted-foreground mb-4">
+              The Rate It tier list maker is a free drag-and-drop tool for building ranking
+              lists. Follow the four steps below to create a tier list, rank anything you
+              like, and export the result as a PNG image you can share with friends.
+            </p>
+
+            <h3 className="font-display text-base font-semibold mt-4 mb-1">1. Add items to the pool</h3>
+            <p className="text-sm text-muted-foreground">
+              Type a name into the input and press <strong>Add</strong>, or click
+              <strong> Upload</strong> to import multiple images at once. Every item lands in
+              the pool below the board so you can sort them in any order.
+            </p>
+
+            <h3 className="font-display text-base font-semibold mt-4 mb-1">2. Drag items into tiers</h3>
+            <p className="text-sm text-muted-foreground">
+              Drag each card from the pool into a tier row. Move items between rows freely
+              until the ranking list reflects how you actually feel about each entry.
+            </p>
+
+            <h3 className="font-display text-base font-semibold mt-4 mb-1">3. Rename your tier labels</h3>
+            <p className="text-sm text-muted-foreground">
+              Click any tier label to rename it. The defaults are Goated, Good, Ight, Meh,
+              and Booty, but the classic S, A, B, C, D, F format works too.
+            </p>
+
+            <h3 className="font-display text-base font-semibold mt-4 mb-1">4. Export as a PNG image</h3>
+            <p className="text-sm text-muted-foreground">
+              Hit <strong>Export</strong> to download a high-resolution PNG of your finished
+              tier list. Share it on Twitter, Reddit, Discord, or anywhere else.
+            </p>
           </article>
+
           <article>
             <h2 className="font-display text-2xl font-bold mb-3">Rank anything you can think of</h2>
+            <p className="text-sm text-muted-foreground mb-3">
+              This tier list creator is built for general-purpose ranking. Use it to rate
+              entertainment, food, products, people, or abstract ideas. The board, tiers,
+              and labels are all editable, so the same template works for serious power
+              rankings or silly inside jokes.
+            </p>
+
+            <h3 className="font-display text-base font-semibold mt-3 mb-1">Popular tier list ideas</h3>
+            <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
+              <li><strong>Movies and TV:</strong> Marvel movies, Studio Ghibli films, Breaking Bad characters, Game of Thrones seasons.</li>
+              <li><strong>Video games:</strong> Smash Bros fighters, Pokémon starters, Elden Ring bosses, Mario Kart tracks.</li>
+              <li><strong>Anime and manga:</strong> shonen protagonists, One Piece arcs, Studio Trigger shows.</li>
+              <li><strong>Music:</strong> Taylor Swift albums, Kendrick Lamar tracks, decade-by-decade songs.</li>
+              <li><strong>Sports:</strong> NBA point guards, Premier League clubs, F1 drivers, NFL quarterbacks.</li>
+              <li><strong>Food and drink:</strong> pizza toppings, fast food chains, breakfast cereals, coffee orders.</li>
+              <li><strong>Everyday life:</strong> productivity apps, keyboard shortcuts, weekday vibes.</li>
+            </ul>
+
+            <h3 className="font-display text-base font-semibold mt-4 mb-1">Why use a tier list maker?</h3>
             <p className="text-sm text-muted-foreground">
-              Use this tier list creator to rank movies, video games, characters, anime, music
-              albums, sports teams, food, brands, or anything else. Build a shareable ranking
-              list in under a minute, with no signup and no install.
+              A tier list turns a messy opinion into something visual and comparable. Instead
+              of arguing over numerical scores, you and your friends can place items into
+              clearly labeled tiers and instantly see where you agree and disagree. It is
+              one of the fastest ways to rank anything on the internet.
             </p>
           </article>
         </section>
@@ -346,29 +391,63 @@ const Index = () => {
           <h2 id="faq" className="font-display text-2xl font-bold mb-4">
             Tier list maker FAQ
           </h2>
-          <dl className="space-y-4 text-sm">
+          <div className="space-y-6 text-sm">
             <div>
-              <dt className="font-semibold text-foreground">What is a tier list?</dt>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">What is a tier list?</h3>
+              <p className="text-muted-foreground">
                 A tier list is a ranking list that groups items into labeled tiers, typically
-                from best (S or Goated) to worst, to compare and rate them visually.
-              </dd>
+                from best (S or Goated) to worst (F or Booty). Tier lists make it easy to
+                compare a large set of options at a glance and to share your opinion in a
+                visual format that other people can argue with or remix.
+              </p>
             </div>
             <div>
-              <dt className="font-semibold text-foreground">How do I rank items with images?</dt>
-              <dd className="text-muted-foreground">
-                Click <em>Upload</em>, pick one or more images, and drag the resulting cards into
-                any tier. You can add a caption to each image too.
-              </dd>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I create a tier list online for free?</h3>
+              <p className="text-muted-foreground">
+                Open Rate It in your browser, add items as text or images, and drag them into
+                tiers. There is no signup, no install, and no paywall. When you are done,
+                press <strong>Export</strong> to download your ranking list as a PNG.
+              </p>
             </div>
             <div>
-              <dt className="font-semibold text-foreground">Is this tier list maker free?</dt>
-              <dd className="text-muted-foreground">
-                Yes. Rate It is 100% free, runs entirely in your browser, and never asks for a
-                signup or payment.
-              </dd>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I rank items with images?</h3>
+              <p className="text-muted-foreground">
+                Click <em>Upload</em>, pick one or more images from your device, and drag the
+                resulting cards into any tier. You can also add an optional caption to each
+                image so people know what they are looking at.
+              </p>
             </div>
-          </dl>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Can I rename the tiers?</h3>
+              <p className="text-muted-foreground">
+                Yes. Click any tier label on the left of the board to rename it. Use the
+                classic S / A / B / C / D / F format, the default Goated / Good / Ight /
+                Meh / Booty labels, or invent your own scale.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Does the tier list maker work on mobile?</h3>
+              <p className="text-muted-foreground">
+                Yes. The drag-and-drop board is touch-friendly and works in any modern mobile
+                browser, so you can build and share a ranking list straight from your phone.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Is this tier list maker really free?</h3>
+              <p className="text-muted-foreground">
+                Yes. Rate It is 100% free, runs entirely in your browser, and never asks for
+                a signup or payment. Your images and items stay on your device.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Can I save my tier list as an image?</h3>
+              <p className="text-muted-foreground">
+                Yes. The <strong>Export</strong> button renders your board to a high-resolution
+                PNG that you can post on social media, drop into a Discord channel, or attach
+                to a blog post.
+              </p>
+            </div>
+          </div>
         </section>
 
         <footer className="mt-12 text-center text-xs text-muted-foreground">

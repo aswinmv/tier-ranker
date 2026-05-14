@@ -391,77 +391,63 @@ const Index = () => {
           <h2 id="faq" className="font-display text-2xl font-bold mb-4">
             Tier list maker FAQ
           </h2>
-          <dl className="space-y-6 text-sm">
+          <div className="space-y-6 text-sm">
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>What is a tier list?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">What is a tier list?</h3>
+              <p className="text-muted-foreground">
                 A tier list is a ranking list that groups items into labeled tiers, typically
                 from best (S or Goated) to worst (F or Booty). Tier lists make it easy to
                 compare a large set of options at a glance and to share your opinion in a
                 visual format that other people can argue with or remix.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>How do I create a tier list online for free?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I create a tier list online for free?</h3>
+              <p className="text-muted-foreground">
                 Open Rate It in your browser, add items as text or images, and drag them into
                 tiers. There is no signup, no install, and no paywall. When you are done,
                 press <strong>Export</strong> to download your ranking list as a PNG.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>How do I rank items with images?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I rank items with images?</h3>
+              <p className="text-muted-foreground">
                 Click <em>Upload</em>, pick one or more images from your device, and drag the
                 resulting cards into any tier. You can also add an optional caption to each
                 image so people know what they are looking at.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>Can I rename the tiers?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Can I rename the tiers?</h3>
+              <p className="text-muted-foreground">
                 Yes. Click any tier label on the left of the board to rename it. Use the
                 classic S / A / B / C / D / F format, the default Goated / Good / Ight /
                 Meh / Booty labels, or invent your own scale.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>Does the tier list maker work on mobile?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Does the tier list maker work on mobile?</h3>
+              <p className="text-muted-foreground">
                 Yes. The drag-and-drop board is touch-friendly and works in any modern mobile
                 browser, so you can build and share a ranking list straight from your phone.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>Is this tier list maker really free?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Is this tier list maker really free?</h3>
+              <p className="text-muted-foreground">
                 Yes. Rate It is 100% free, runs entirely in your browser, and never asks for
                 a signup or payment. Your images and items stay on your device.
-              </dd>
+              </p>
             </div>
             <div>
-              <h3 className="font-display text-base font-semibold text-foreground mb-1">
-                <dt>Can I save my tier list as an image?</dt>
-              </h3>
-              <dd className="text-muted-foreground">
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Can I save my tier list as an image?</h3>
+              <p className="text-muted-foreground">
                 Yes. The <strong>Export</strong> button renders your board to a high-resolution
                 PNG that you can post on social media, drop into a Discord channel, or attach
                 to a blog post.
-              </dd>
+              </p>
             </div>
-          </dl>
+          </div>
         </section>
 
         <footer className="mt-12 text-center text-xs text-muted-foreground">

@@ -447,6 +447,78 @@ const Index = () => {
                 to a blog post.
               </p>
             </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I make a tier list for free?</h3>
+              <p className="text-muted-foreground">
+                Rate It is a free tier list maker that runs entirely in your browser. Open the
+                page, type or upload the items you want to rank, drag them into the tiers, and
+                hit <strong>Export</strong>. There is no trial, no premium plan, and no credit
+                card prompt, just a free ranking website you can use as often as you like.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I make a tier list without signing up?</h3>
+              <p className="text-muted-foreground">
+                You do not need an account. Rate It never asks you to sign up, log in, or
+                connect a social profile. Your tier list lives in your browser tab, so you can
+                rank anything privately and only share it when you are ready by exporting the
+                PNG yourself.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I make a tier list on mobile?</h3>
+              <p className="text-muted-foreground">
+                Open this page in Safari, Chrome, or any modern mobile browser. The board uses
+                touch-friendly drag and drop, so you can press and hold an item and slide it
+                into a tier with your thumb. Image uploads pull straight from your camera roll,
+                making it the easiest way to build a teir list on a phone or tablet.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I make a custom tier list?</h3>
+              <p className="text-muted-foreground">
+                Every part of the board is customizable. Rename the tier labels (S, A, B, C or
+                anything else you invent), add your own items as text or images, write captions,
+                and reorder rows by dragging. That flexibility is what turns a basic tierlist
+                into a custom ranking list that actually reflects your taste.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How do I make my own tier list from scratch?</h3>
+              <p className="text-muted-foreground">
+                Start with an empty board, decide what you are ranking (movies, songs, players,
+                snacks, anything), add the contenders one by one, then sort them. Making your
+                own tier list takes about two minutes and the result is a shareable ranking
+                image that is yours, not a remix of someone else's template.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">Can I make a private tier list?</h3>
+              <p className="text-muted-foreground">
+                Yes. Rate It does not upload your tier list anywhere. Everything stays in your
+                browser until you choose to export the PNG, which makes it a great private tier
+                list maker for personal rankings, draft boards, or work-in-progress lists you
+                are not ready to publish yet.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">How is this ranking website different from Canva tier list maker or TierMaker?</h3>
+              <p className="text-muted-foreground">
+                Canva is a full design suite and TierMaker focuses on community templates. Rate
+                It is a focused list maker built around one job: drag, rank, export. There is
+                no signup, no template gallery to wade through, and no design learning curve,
+                just a clean ranking website that loads fast and gets out of your way.
+              </p>
+            </div>
+            <div>
+              <h3 className="font-display text-base font-semibold text-foreground mb-1">What can I rank with a tear maker like this?</h3>
+              <p className="text-muted-foreground">
+                Anything. People use Rate It as a teirlist tool for video games, anime
+                characters, NFL quarterbacks, Taylor Swift albums, fast food chains, coworkers,
+                Pokemon, board games, coffee shops, and the seven Star Wars films that actually
+                exist. If you can name it, you can rank it.
+              </p>
+            </div>
           </div>
         </section>
 

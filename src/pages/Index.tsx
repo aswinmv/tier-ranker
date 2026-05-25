@@ -215,8 +215,12 @@ const Index = () => {
             Tier List Maker: Rank Anything
           </h1>
           <p className="text-muted-foreground text-lg">
-            Free drag-and-drop tier list maker. Create a ranking list with text or images,
-            rename tiers, and export your tier list as a PNG.
+            Free drag-and-drop tier list maker and ranking website. Create a ranking list
+            with text or images, rename tiers, and export your tier list as a PNG. Jump to
+            the <a href="#how-to-rank" className="underline hover:text-foreground">how-to guide</a>,
+            {" "}<a href="#ranking-website" className="underline hover:text-foreground">ranking website overview</a>,
+            {" "}<a href="#comparison" className="underline hover:text-foreground">Rate It vs TierMaker vs Canva comparison</a>,
+            or the <a href="#faq" className="underline hover:text-foreground">tier list FAQ</a>.
           </p>
         </header>
 

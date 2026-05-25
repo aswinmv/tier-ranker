@@ -215,8 +215,12 @@ const Index = () => {
             Tier List Maker: Rank Anything
           </h1>
           <p className="text-muted-foreground text-lg">
-            Free drag-and-drop tier list maker. Create a ranking list with text or images,
-            rename tiers, and export your tier list as a PNG.
+            Free drag-and-drop tier list maker and ranking website. Create a ranking list
+            with text or images, rename tiers, and export your tier list as a PNG. Jump to
+            the <a href="#how-to-rank" className="underline hover:text-foreground">how-to guide</a>,
+            {" "}<a href="#ranking-website" className="underline hover:text-foreground">ranking website overview</a>,
+            {" "}<a href="#comparison" className="underline hover:text-foreground">Rate It vs TierMaker vs Canva comparison</a>,
+            or the <a href="#faq" className="underline hover:text-foreground">tier list FAQ</a>.
           </p>
         </header>
 
@@ -386,6 +390,132 @@ const Index = () => {
             </p>
           </article>
         </section>
+
+        <section aria-labelledby="ranking-website" className="mt-12">
+          <h2 id="ranking-website" className="font-display text-2xl font-bold mb-3">
+            A free ranking website and list maker for everything
+          </h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            Rate It is more than a tier list maker. It is a general-purpose ranking website
+            and list maker for anyone who wants to put items in order without spreadsheets,
+            slide decks, or design tools. Whether you are sorting movies, drafting fantasy
+            teams, or arguing with friends about pizza toppings, the same lightweight board
+            handles it. Skip ahead to the{" "}
+            <a href="#comparison" className="underline hover:text-foreground">comparison with TierMaker and Canva</a>{" "}
+            or the <a href="#faq" className="underline hover:text-foreground">FAQ</a> if you
+            already know what you are looking for.
+          </p>
+
+          <h3 className="font-display text-base font-semibold mt-4 mb-1">Ranking website built for speed</h3>
+          <p className="text-sm text-muted-foreground">
+            Most ranking websites bury you in templates, ads, or signup walls. Rate It loads
+            a single drag-and-drop board, remembers nothing it does not need to, and lets
+            you publish a ranking image in under two minutes. That makes it a solid pick
+            when you just want to rank anything quickly without learning a new app.
+          </p>
+
+          <h3 className="font-display text-base font-semibold mt-4 mb-1">List maker that doubles as a tier list maker</h3>
+          <p className="text-sm text-muted-foreground">
+            Use it as a plain list maker to brainstorm and reorder items, then promote that
+            list into a full teir list (or tierlist, if you prefer the misspelling) by
+            dragging entries into tiers. The same items can move back and forth, so your
+            ranking list stays editable as your opinions change.
+          </p>
+
+          <h3 className="font-display text-base font-semibold mt-4 mb-1">Who uses this tear maker?</h3>
+          <p className="text-sm text-muted-foreground">
+            Gamers ranking characters, sports fans sorting players, content creators
+            building reaction videos, teachers running classroom polls, and anyone who has
+            ever searched for a free tier list maker, teirlist tool, or tear maker to settle
+            an argument.
+          </p>
+        </section>
+
+        <section aria-labelledby="comparison" className="mt-12">
+          <h2 id="comparison" className="font-display text-2xl font-bold mb-3">
+            Rate It vs TierMaker vs Canva Tier List Maker
+          </h2>
+          <p className="text-sm text-muted-foreground mb-4">
+            Three of the most searched tier list tools online are Rate It, TierMaker, and
+            the Canva tier list maker. They all let you build a ranking list, but they are
+            built for different jobs. Here is how they compare for someone who just wants
+            to rank anything quickly.
+          </p>
+
+          <div className="overflow-x-auto rounded-xl border border-border">
+            <table className="w-full text-sm">
+              <thead className="bg-surface text-left">
+                <tr>
+                  <th className="px-3 py-2 font-semibold">Feature</th>
+                  <th className="px-3 py-2 font-semibold">Rate It</th>
+                  <th className="px-3 py-2 font-semibold">TierMaker</th>
+                  <th className="px-3 py-2 font-semibold">Canva tier list maker</th>
+                </tr>
+              </thead>
+              <tbody className="text-muted-foreground">
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Free tier list</td>
+                  <td className="px-3 py-2">Yes, no limits</td>
+                  <td className="px-3 py-2">Yes, with ads</td>
+                  <td className="px-3 py-2">Free tier, paid upsells</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Signup required</td>
+                  <td className="px-3 py-2">No</td>
+                  <td className="px-3 py-2">No</td>
+                  <td className="px-3 py-2">Yes, Canva account</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Custom items and images</td>
+                  <td className="px-3 py-2">Type or upload</td>
+                  <td className="px-3 py-2">Community templates first</td>
+                  <td className="px-3 py-2">Design-tool workflow</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Mobile friendly</td>
+                  <td className="px-3 py-2">Touch drag and drop</td>
+                  <td className="px-3 py-2">Limited</td>
+                  <td className="px-3 py-2">App focused</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Export as PNG</td>
+                  <td className="px-3 py-2">One click</td>
+                  <td className="px-3 py-2">Screenshot or share</td>
+                  <td className="px-3 py-2">Export from editor</td>
+                </tr>
+                <tr className="border-t border-border">
+                  <td className="px-3 py-2 text-foreground">Best for</td>
+                  <td className="px-3 py-2">Fast custom ranking list</td>
+                  <td className="px-3 py-2">Browsing existing templates</td>
+                  <td className="px-3 py-2">Branded designed graphics</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h3 className="font-display text-base font-semibold mt-6 mb-1">When to pick Rate It</h3>
+          <p className="text-sm text-muted-foreground">
+            Choose Rate It when you want a focused free tier list maker with no signup, no
+            template gallery to scroll through, and no design learning curve. It is the
+            shortest path from idea to a shareable ranking image.
+          </p>
+
+          <h3 className="font-display text-base font-semibold mt-4 mb-1">When TierMaker makes sense</h3>
+          <p className="text-sm text-muted-foreground">
+            TierMaker is great when you specifically want a community template, like every
+            Pokemon or every Marvel character pre-loaded for you. If your topic has a
+            popular template already, TierMaker can save setup time.
+          </p>
+
+          <h3 className="font-display text-base font-semibold mt-4 mb-1">When to use the Canva tier list maker</h3>
+          <p className="text-sm text-muted-foreground">
+            The Canva tier list maker fits when the final image needs heavy branding,
+            custom typography, or to live inside a larger Canva project. It is a design
+            tool first and a ranking website second.
+          </p>
+        </section>
+
+
 
         <section aria-labelledby="faq" className="mt-12">
           <h2 id="faq" className="font-display text-2xl font-bold mb-4">
